@@ -1,0 +1,265 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	font-family:'Playfair Display', serif;
+	margin: 0;
+	font-size: 130%;
+	line-height: 1.8em;
+	font-weight: 300;
+background-color: rgba(250,196,191,1.00);	
+}
+
+header img {
+	width: 300px;
+	height: 300px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	align-content: center;
+	padding-top: 30px;
+}
+
+/*
+.center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+}
+*/
+
+nav {
+	float: right;
+	color: white;
+	font-size: 13px;
+	padding-right: 5px;
+	font-family: 'Open Sans', sans-serif;
+	
+}
+
+nav a:link{
+	color: white;
+	text-decoration: none;
+}
+
+p1 {
+	float: left;
+	color: white;
+	font-size: 13px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+h1{
+	color:rgba(226,0,3,1.00);
+	font-style: italic;
+	text-align: center;
+	margin-top:-26px;
+}
+
+h2{
+	color: white;
+	font-size: 13px;
+	text-align: center;
+	margin-top:-35px;
+/*	margin-left: 67%;*/
+	font-family: 'Open Sans', sans-serif;
+}
+
+h3{
+	color:white;
+	font-size: 19px;
+	text-align: center;
+
+}
+
+p{
+	color: white;
+	font-size: 13px;
+	text-align: right;
+	margin-top:-35px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+h4{
+	color: rgba(226,0,3,1.00);
+	font-style: italic;
+}
+
+.container {
+	width: 75%;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: rgba(250,196,191,1.00);
+}
+
+
+.divider{
+	background-color: rgba(255,255,255,0.79);
+	border-bottom: thick,rgba(255,255,255,0.79);
+	height: 15px;
+}
+
+ 
+.resume-img{
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 50px;
+}
+
+.social{
+	background-color: white;
+	text-align: center;
+	font-style: italic;
+}
+
+p3{
+	color:rgba(226,0,3,1.00);
+	margin-left: 7px;
+	font-size: .70em;
+/*	float: left;*/
+/*	text-align: left;*/
+
+}
+
+p4{
+	color: rgba(226,0,3,1.00);
+	font-size: .50em;
+	margin-top: -20px;
+/*	float: right;*/
+/*	text-align: right;*/
+}
+
+.whole{
+/*	padding: 30px;*/
+	padding-top: 50px;
+	
+}
+
+
+.paragraph{
+	width: 50%;
+	float: left;
+}
+
+.paragraph p7{
+/*	margin: 15px;*/
+/*	padding-left: 50px;*/
+	font-family: 'Open Sans', sans-serif;
+	font-size: 13px;
+	padding: 0 10px;
+}
+
+.img-me{
+	width: 35%;
+	float: left;
+	margin-bottom: 50px;
+	padding: 0 15px;
+	margin-top: 50px;
+}
+
+.img-me img{
+	width: 130%;
+	height: auto;
+	display: block;
+	margin-right: 70px;
+}
+
+.clear {
+	clear: both;
+}
+
+.paragraph h7{
+	padding-left: 70;
+	color:rgba(226,0,3,1.00);
+/*	margin: 15px;*/
+	font-style: italic;
+}
+
+
+
+
+
+
+
+/* Style the Image Used to Trigger the Modal */
+#image1 {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#image1:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption1 {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption1 {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+} 
+

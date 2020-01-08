@@ -1,0 +1,295 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+
+<title>Camilla's Portfolio</title>
+<link href="styles.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+	<div class="container">
+		<header>
+
+			<p1>Camilla's Portfolio</p1>
+			<nav>
+				<a href="camillafleitas.html">Home |</a>
+				<a href="resume.html">Resume |</a>
+				<a href="about.html">About</a>
+			</nav>									
+		<br>
+			<img src="Images/Image Header.png" width="50" height="50" alt="self-image"/>
+			<h1>Camilla Fleitas</h1>
+			<h2>Designer</h2>
+		</header>
+	
+	<div class="quote">
+		<div class="quote-text">
+		<h3>"I'm not really married to the craft- I'm married to me, and my style, and whatever I produce."</h3>
+		<p>-Robert Glasper</p>
+		</div>	
+	</div>
+	
+	<div class="divider">
+	
+		
+	</div>
+	
+		
+	<div class="my work">
+		<h4>My Work</h4>
+		
+		<table align="center" cellspacing="80" style="margin-top:-100px;" id="imageTable">
+			<tr>
+				<td>
+					<input type="image" src="Images/Image 1.png" width="210" height="210" alt="Wild One" id="image1"/>
+				</td>
+				<td>
+					<input type="image" src="Images/Image 2.png" width="210" height="210" alt="Cat Coffee" id="image2"/>
+				</td>
+				<td>
+					<input type="image" src= "Images/Image 3.png" width="210" height="210" alt="Poster" id="image3"/>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="image" src="Images/Image 4.png" width="210" height="210" alt="Bring It On Poster" id="image4"/>
+				</td>
+				<td>
+					<input type="image" src="Images/Image 5.png" width="210" height="210" alt="Seeing is believing Poster" id="image5"/>
+				</td>
+				<td>
+					<input type="image" src="Images/Image 6.png" width="210" height="210" alt="Black Shoes" id="image6"/>
+				</td>
+			</tr>
+		</table>
+		
+<!-- Image 1 Modal -->
+<div id="image1Modal" class="modal">
+
+  <!-- The Close Button -->
+  <span class="close">&times;</span>
+
+  <!-- Modal Content (The Image) -->
+  <img class="modal-content" id="img01" src="Images/Folded Mailer_Page_1.png" alt="Folded Mailer"/>
+
+  <!-- Modal Caption (Image Text) -->
+  <div id="caption1">Creating a folded mailer in Illustrator</div>
+</div>
+		
+<!-- Image 2 Modal -->
+<div id="image2Modal" class="modal">
+
+  <!-- The Close Button -->
+  <span class="close">&times;</span>
+
+  <!-- Modal Content (The Image) -->
+  <img class="modal-content" id="img02" src="Images/LogoCamilla_Page_1.png" alt="Cat Coffee Logo"/>
+
+  <!-- Modal Caption (Image Text) -->
+  <div id="caption2">Creating a coffee logo in Illustrator</div>
+</div>
+		
+<!-- Image 3 Modal -->
+<div id="image3Modal" class="modal">
+
+  <!-- The Close Button -->
+  <span class="close">&times;</span>
+
+  <!-- Modal Content (The Image) -->
+  <img class="modal-content" id="img03" src="Images/Type Design 3.png" alt="Graphic Design Poster"/>
+
+  <!-- Modal Caption (Image Text) -->
+  <div id="caption3">Creating a poster in InDesign</div>
+</div>
+		
+<!-- Image 4 Modal -->
+<div id="image4Modal" class="modal">
+
+  <!-- The Close Button -->
+  <span class="close">&times;</span>
+
+  <!-- Modal Content (The Image) -->
+  <img class="modal-content" id="img04" src="Images/Typogrpahy Page 1.png" alt="Bring it on Poster"/>
+
+  <!-- Modal Caption (Image Text) -->
+  <div id="caption4">Creating a poster in Illustrator</div>
+</div>
+
+<!-- Image 5 Modal -->
+<div id="image5Modal" class="modal">
+
+  <!-- The Close Button -->
+  <span class="close">&times;</span>
+
+  <!-- Modal Content (The Image) -->
+  <img class="modal-content" id="img05" src="Images/Typography Page 2.png" alt="Seeing is believing Poster"/>
+
+  <!-- Modal Caption (Image Text) -->
+  <div id="caption5">Creating a poster in InDesign</div>
+</div>
+		
+<!-- Image 6 Modal -->
+<div id="image6Modal" class="modal">
+
+  <!-- The Close Button -->
+  <span class="close">&times;</span>
+
+  <!-- Modal Content (The Image) -->
+  <img class="modal-content" id="img06" src="Images/CamillaFleitas Assignment 3.png" alt="Black Shoes"/>
+
+  <!-- Modal Caption (Image Text) -->
+  <div id="caption6">Creating an illustration in Illustrator</div>
+</div>
+		</div>
+			
+	<footer>
+		<div class="social">
+		<p3>Let's Chat!</p3>
+		<a href="mailto:camillafleitas@outlook.com"><img src="Images/email icon2.png" width="17" height="17" alt="email"/></a>
+		<a href="tel:3016611332"><img src="Images/phone.png" width="17" height="17" alt="telephone"/></a>
+		<p4>&copy; 2019 CamillaFleitas</p4>
+		</div>
+	</footer>
+</div>
+
+</body>
+	
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	
+<!--
+<script type="text/javascript">
+	console.log("TEST1");
+	function clickImage1() {
+		$("#image1Full").attr("hidden", false);
+		$("#imageTable").attr("hidden", true);
+	}
+</script>
+-->
+<script type="text/javascript">
+// Image 1 Modal
+var image1Modal = document.getElementById("image1Modal");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var image1 = document.getElementById("image1");
+var modalImg1 = document.getElementById("img01");
+image1.onclick = function(){
+  image1Modal.style.display = "block";
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  image1Modal.style.display = "none";
+} 	
+</script>
+
+<script type="text/javascript">
+// Image 2 Modal
+var image2Modal = document.getElementById("image2Modal");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var image2 = document.getElementById("image2");
+var modalImg2 = document.getElementById("img02");
+image2.onclick = function(){
+  image2Modal.style.display = "block";
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[1];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  image2Modal.style.display = "none";
+} 	
+</script>
+	
+<script type="text/javascript">
+// Image 3 Modal
+var image3Modal = document.getElementById("image3Modal");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var image3 = document.getElementById("image3");
+var modalImg3 = document.getElementById("img03");
+image3.onclick = function(){
+  image3Modal.style.display = "block";
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[2];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  image3Modal.style.display = "none";
+} 	
+</script>
+
+<script type="text/javascript">
+// Image 4 Modal
+var image4Modal = document.getElementById("image4Modal");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var image4 = document.getElementById("image4");
+var modalImg4 = document.getElementById("img04");
+image4.onclick = function(){
+  image4Modal.style.display = "block";
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[3];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  image4Modal.style.display = "none";
+} 	
+</script>
+
+<script type="text/javascript">
+// Image 5 Modal
+var image5Modal = document.getElementById("image5Modal");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var image5 = document.getElementById("image5");
+var modalImg5 = document.getElementById("img05");
+image5.onclick = function(){
+  image5Modal.style.display = "block";
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[4];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  image5Modal.style.display = "none";
+} 	
+</script>
+
+<script type="text/javascript">
+// Image 6 Modal
+var image6Modal = document.getElementById("image6Modal");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var image6 = document.getElementById("image6");
+var modalImg6 = document.getElementById("img06");
+image6.onclick = function(){
+  image6Modal.style.display = "block";
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[5];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  image6Modal.style.display = "none";
+} 	
+</script>
+
+
+</html>
